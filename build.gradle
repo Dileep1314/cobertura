@@ -1,247 +1,50 @@
-buildscript {
-	repositories {
-		mavenCentral()
-		maven {
-			name = 'sonatype-nexus-public'
-			url = 'https://oss.sonatype.org/content/repositories/public/'
-		}
-		maven {
-			name = 'forge-repo'
-			url = 'http://files.minecraftforge.net/maven/'
-		}
-	}
-	dependencies {
-		classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
-	}
-}
+apply plugin: 'java'
+apply plugin: 'maven'
 
-// Gradle plugins
-plugins {
-	id "maven"
-	id "signing"
-	id "com.matthewprenger.cursegradle" version "1.0.7"
-}
+group = 'com.github.jitpack'
 
-apply plugin: 'forge'
+sourceCompatibility = 1.8 // java 8
+targetCompatibility = 1.8
 
-afterEvaluate { project.curseforge.curseProjects.each { p -> p.gameVersionStrings -= "Java 6" } }
-
-// Project repositories
 repositories {
-	mavenLocal()
-	mavenCentral()
-	maven {
-		name = 'sonatype-nexus-public'
-		url = 'https://oss.sonatype.org/content/repositories/public/'
-	}
+  mavenCentral()
 }
 
-// Project dependencies
 dependencies {
+  compile 'com.google.guava:guava:18.0'
 }
 
-// Gradle default tasks
-defaultTasks 'build', 'install'
-
-// Basic project information
-group = 'net.malisis'
-archivesBaseName = 'malisiscore'
-version = '1.7.10-0.14.1'
-ext.packaging = 'jar'
-
-// Extended project information
-ext.projectName = 'MalisisCore'
-ext.description = 'MalisisCore is a framework dedicated to simplify many processes required during a mod development.'
-ext.url = 'http://github.com/Ordinastie/MalisisCore'
-
-
-// Compilation variables
-ext.buildNumber = project.hasProperty("buildNumber") ? buildNumber : '0'
-ext.ciSystem = project.hasProperty("ciSystem") ? ciSystem : 'unknown'
-ext.commit = project.hasProperty("commit") ? commit : 'unknown'
-
-// MinecraftForge version
-minecraft {
-	version = "1.7.10-10.13.2.1342-1.7.10"
-	if(file("../../run").exists()) 
-		runDir = "../../run/assets"
-	else
-		runDir = "run/assets"
-	mappings = "stable_12"
-	
-	replace '${version}', project.version
-	replaceIn "MalisisCore.java"
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
 }
 
-// Filter, process, and include resources
-processResources {
-	inputs.property "version", version
-	inputs.property "mcversion", project.minecraft.version
-
-	// Include in final JAR
-	from 'LICENSE.txt'
-
-	// Replace variables
-	from('src/main/resources/mcmod.info') {
-		expand 'modid': archivesBaseName,
-				'name': projectName,
-				'description': project.ext.description,
-				'version': version,
-				'buildNumber': buildNumber,
-				'mcversion': minecraft.version,
-				'url': url
-	}
-}
-
-// JAR manifest configuration
-def commonManifest = {
-		mainAttributes(	"Built-By": System.properties['user.name'],
-						"Created-By": System.properties['java.vm.version'] + " (" + System.properties['java.vm.vendor'] + ")",
-						"Implementation-Title": name,
-						"Implementation-Version": version,
-						"Implementation-Vendor": url,
-						"FMLCorePlugin": "net.malisis.core.asm.MalisisCorePlugin",
-						"FMLCorePluginContainsFMLMod": true)
-}
-jar.manifest commonManifest
-
-if (JavaVersion.current().isJava8Compatible()) {
-	tasks.withType(Javadoc) {
-		// disable the crazy super-strict doclint tool in Java 8
-		options.addStringOption('Xdoclint:none', '-quiet')
-	}
-}
-
-// Javadoc JAR generation
 task javadocJar(type: Jar, dependsOn: javadoc) {
-	classifier = 'javadoc'
-	from 'build/docs/javadoc'
+    classifier = 'javadoc'
+    from javadoc.destinationDir
 }
 
-// Source JAR generation
-task sourcesJar(type: Jar) {
-	classifier = 'sources'
-	from sourceSets.main.java.srcDirs
-}
-
-// Create a JAR based on deobfuscated code
-task deobfJar(type: Jar) {
-	manifest commonManifest
-	from sourceSets.main.output
-	classifier = 'dev'
-}
-
-task compilePlugin(type : JavaCompile) {
- 	source = fileTree(dir: "src/main/java")
-	classpath = sourceSets.main.compileClasspath
-	destinationDir = sourceSets.main.output.classesDir
-	include 'net/malisis/core/asm/MalisisCorePlugin*'
-	include 'net/malisis/core/asm/MalisisCoreAccessTransformer*'
-	include 'net/malisis/javacompat/JavaCompatibility*'
-	sourceCompatibility = 1.6
-	targetCompatibility = 1.6
-}
-
-compileJava {
-	exclude 'net/malisis/core/asm/MalisisCorePlugin*'
-	exclude 'net/malisis/core/asm/MalisisCoreAccessTransformer*'
-	exclude 'net/malisis/javacompat/JavaCompatibility*'
-
-	sourceCompatibility = 1.7
-	targetCompatibility = 1.7
-}
-
-tasks.compileJava.dependsOn('compilePlugin')
-
-
-makeStart {
-	// TODO do this properly with FG2
-	addReplacement("parseArgs(args);", "parseArgs(args); String __malisis_coremodProp = System.getProperty(\"fml.coreMods.load\", \"\");" +
-			"__malisis_coremodProp += \"net.malisis.core.asm.MalisisCorePlugin\";" +
-			"System.setProperty(\"fml.coreMods.load\", __malisis_coremodProp);")
-}
-
-
-// Set all artifacts
 artifacts {
-	archives deobfJar, sourcesJar, javadocJar
+    archives sourcesJar
+    archives javadocJar
 }
 
-// Deployment signing
-signing {
-	// Check if uploadArchives task is used
-	required { gradle.taskGraph.hasTask("uploadArchives") }
-	
-	// Sign JAR artifacts
-	sign configurations.archives
+// To specify a license in the pom:
+install {
+  repositories.mavenInstaller {
+    pom.project {
+      licenses {
+        license {
+          name 'The Apache Software License, Version 2.0'
+          url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+          distribution 'repo'
+        }
+      }
+    }
+  }
 }
 
-// Artifact deployment
-uploadArchives {
-	repositories.mavenDeployer {
-	
-	 	// Sign Maven POM
-		beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
-	
-		def username = project.hasProperty('sonatypeUsername') ? project.getProperty('sonatypeUsername') : System.getenv("sonatypeUsername");
-		def password = project.hasProperty('sonatypePassword') ? project.getProperty('sonatypePassword') : System.getenv("sonatypePassword");
-
-		snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
-			authentication(userName: username, password: password)
-		}
-		
-		repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2") {
-			authentication(userName: username, password: password)
-		}
-
-		// Maven POM generation
-		pom.project {
-			name projectName
-			artifactId archivesBaseName
-			packaging packaging
-			url url
-			description project.ext.description
-
-			scm {
-				connection 'scm:git:git://github.com/Ordinastie/MalisisCore.git'
-				developerConnection 'scm:git:ssh://git@github.com:Ordinastie/MalisisCore.git'
-				url 'https://github.com/Ordinastie/MalisisCore'
-			}
-
-			licenses {
-				license {
-					name 'The MIT License'
-					url 'http://www.tldrlegal.com/license/mit-license'
-					distribution 'repo'
-				}
-			}
-
-			developers {
-				developer {
-					id 'Ordinastie'
-					name 'Ordinastie'
-				}
-			}
-
-			issueManagement {
-				system 'github'
-				url 'https://github.com/Ordinastie/MalisisCore/issues'
-			}
-		}
-	}
-}
-
-
-if (project.hasProperty('curseapi')) {
-	curseforge {
-		apiKey = curseapi
-		project {
-			id = '223896'
-			releaseType = 'beta'
-			
-			addArtifact deobfJar
-			addArtifact sourcesJar
-			addArtifact javadocJar			   		
-		}
-	}
+wrapper {
+    gradleVersion = "5.1.1"
+    distributionType = Wrapper.DistributionType.ALL
 }

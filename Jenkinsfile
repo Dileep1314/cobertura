@@ -19,7 +19,8 @@ pipeline {
                     stage ('BUILD') {
 					    sh ''' 
 						gradle --version
-				        gradle clean build --refresh-dependencies tar -x test --info
+				        gradle clean
+					gradle build
 						
 						'''
                         

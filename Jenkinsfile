@@ -19,8 +19,8 @@ pipeline {
                     stage ('BUILD') {
 					    sh ''' 
 						gradle --version
-				        gradle clean
-					gradle build
+				        gradle -q helloWorldLeftShift
+			
 						
 						'''
                         

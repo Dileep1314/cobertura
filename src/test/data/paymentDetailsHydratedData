@@ -1,0 +1,58 @@
+{
+  "balanceSummary": {
+    "configurationId": "DEFAULT_BILLING_TYPE_PAYMENTS_HISTORY_DETAILED_SMD",
+    "detailedClientData": {
+      "items": [
+        {
+          "detailedClientRowData": [
+            {
+              "testId": "paidDate",
+              "text": "01-01-2016"
+            },
+            {
+              "testId": "referenceNumber",
+              "text": "R1234"
+            },
+            {
+              "testId": "methodCode",
+              "text": "201"
+            },
+            {
+              "testId": "amount",
+              "text": "200.00"
+            },
+            {
+              "testId": "statusCode",
+              "text": "401"
+            }
+          ]
+        },
+        {
+          "detailedClientRowData": [
+            {
+              "testId": "paidDate",
+              "text": "02-02-2016"
+            },
+            {
+              "testId": "referenceNumber",
+              "text": "R12345"
+            },
+            {
+              "testId": "methodCode",
+              "text": "202"
+            },
+            {
+              "testId": "amount",
+              "text": "200.00"
+            },
+            {
+              "testId": "statusCode",
+              "text": "402"
+            }
+          ]
+        }
+      ]
+    },
+    "type": "PROD_TYPE_PAYMENT_HISTORY_DETAILED"
+  }
+}

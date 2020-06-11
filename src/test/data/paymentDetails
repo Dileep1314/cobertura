@@ -1,0 +1,81 @@
+{
+    "paymentDetails": {
+        "paymentHistory": [
+            {
+                "detailedClientRowData": [
+                    {
+                        "testId": "paidDate",
+                        "text": "01-01-2016"
+                    },
+                    {
+                        "testId": "referenceNumber",
+                        "text": "R1234"
+                    },
+                    {
+                        "testId": "methodCode",
+                        "text": "Paypal"
+                    },
+                    {
+                        "testId": "amount",
+                        "text": "200.00"
+                    },
+                    {
+                        "testId": "statusCode",
+                        "text": "Returned"
+                    }
+                ]
+            },
+            {
+                "detailedClientRowData": [
+                    {
+                        "testId": "paidDate",
+                        "text": "02-02-2016"
+                    },
+                    {
+                        "testId": "referenceNumber",
+                        "text": "R12345"
+                    },
+                    {
+                        "testId": "methodCode",
+                        "text": "Credit Card"
+                    },
+                    {
+                        "testId": "amount",
+                        "text": "200.00"
+                    },
+                    {
+                        "testId": "statusCode",
+                        "text": "Accepted"
+                    }
+                ]
+            },
+            {
+                "detailedClientRowData": [
+                    {
+                        "testId": "paidDate",
+                        "text": "03-03-2016"
+                    },
+                    {
+                        "testId": "referenceNumber",
+                        "text": "R12346"
+                    },
+                    {
+                        "testId": "methodCode",
+                        "text": "Paypal"
+                    },
+                    {
+                        "testId": "amount",
+                        "text": "200.00"
+                    },
+                    {
+                        "testId": "statusCode",
+                        "text": "Accepted"
+                    }
+                ]
+            }
+        ],
+        "offset": "0",
+        "limit": "3",
+        "totalSize": "12"
+    }
+}

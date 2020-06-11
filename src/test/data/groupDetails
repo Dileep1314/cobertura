@@ -1,0 +1,403 @@
+{
+    "_id" : "12345",
+    "_class" : "org.bson.Document",
+    "data" : [ 
+        {
+            "accountNumber" : "23456",
+            "number" : "12348912345",
+            "billAmount" : {
+                "currency" : "USD",
+                "amount" : "200.00"
+            },
+            "billDate" : "2012-11-12",
+            "billMode" : "Email",
+            "dueAmount" : {
+                "currency" : "USD",
+                "amount" : "200.00"
+            },
+            "dueDate" : "12/02/2017",
+            "extension" : {
+                "billFromDate" : "2012/11/10",
+                "billToDate" : "2012/12/10",
+                "billStatus" : "Processing",
+                "outstandingAmount" : {
+                    "currency" : "USD",
+                    "amount" : "50.00",
+                    "id" : "29"
+                },
+                "entityName" : "IBM Blue NC",
+                "groupStatusTypeCode" : "101",
+                "billingFrequency" : "monthly",
+                "payrollDeduction" : "Yes",
+                "feeAmounts" : [ 
+                    {
+                        "feeTypeCode" : "101",
+                        "feeAmount" : {
+                            "currency" : "USD",
+                            "amount" : "0.00",
+                            "id" : "30"
+                        }
+                    }, 
+                    {
+                        "feeTypeCode" : "MISSING_DATA_CONFIG",
+                        "feeAmount" : {
+                            "currency" : "USD",
+                            "amount" : "200.00",
+                            "id" : "31"
+                        }
+                    }
+                ],
+                "lastBillAmount" : {
+                    "currency" : "USD",
+                    "amount" : "100.00",
+                    "id" : "32"
+                },
+                "suspenseAmount" : {
+                    "currency" : "USD",
+                    "amount" : "10.00",
+                    "id" : "33"
+                },
+                "creditsWriteOffsAmount" : {
+                    "currency" : "USD",
+                    "amount" : "15.00",
+                    "id" : "34"
+                },
+                "paymentReceivedAmount" : {
+                    "amount" : "80.00",
+                    "currency" : "USD"
+                }
+            },
+            "self" : "http://localhost:3000/spi/v2/billProfiles/12348912345"
+        }, 
+        {
+            "accountNumber" : "45678",
+            "number" : "2345678912345",
+            "billAmount" : {
+                "currency" : "USD",
+                "amount" : "400.00"
+            },
+            "billDate" : "2012-09-12",
+            "billMode" : "Email",
+            "dueAmount" : {
+                "currency" : "USD",
+                "amount" : "200.00"
+            },
+            "dueDate" : "12/02/2017",
+            "extension" : {
+                "billFromDate" : "2012/09/10",
+                "billToDate" : "2012/10/10",
+                "billStatus" : "Payment Due",
+                "outstandingAmount" : {
+                    "currency" : "USD",
+                    "amount" : "80.00",
+                    "id" : "46"
+                },
+                "entityName" : "IBM Blue NY",
+                "groupStatusTypeCode" : "101",
+                "billingFrequency" : "monthly",
+                "payrollDeduction" : "Yes",
+                "feeAmounts" : [ 
+                    {
+                        "feeTypeCode" : "101",
+                        "feeAmount" : {
+                            "currency" : "USD",
+                            "amount" : "0.00",
+                            "id" : "47"
+                        }
+                    }
+                ],
+                "lastBillAmount" : {
+                    "currency" : "USD",
+                    "amount" : "300.00",
+                    "id" : "48"
+                },
+                "suspenseAmount" : {
+                    "currency" : "USD",
+                    "amount" : "10.00",
+                    "id" : "49"
+                },
+                "creditsWriteOffsAmount" : {
+                    "currency" : "USD",
+                    "amount" : "15.00",
+                    "id" : "50"
+                },
+                "paymentReceivedAmount" : {
+                    "amount" : "120.00",
+                    "currency" : "USD"
+                }
+            },
+            "self" : "http://localhost:3000/spi/v2/billProfiles/2345678912345"
+        }, 
+        {
+            "accountNumber" : "12345",
+            "number" : "345678912345",
+            "billAmount" : {
+                "currency" : "USD",
+                "amount" : "300.00"
+            },
+            "billDate" : "2012-10-12",
+            "billMode" : "Email",
+            "dueAmount" : {
+                "currency" : "USD",
+                "amount" : "200.00"
+            },
+            "dueDate" : "12/02/2017",
+            "extension" : {
+                "billFromDate" : "2012/10/10",
+                "billToDate" : "2012/11/10",
+                "billStatus" : "Paid in full",
+                "outstandingAmount" : {
+                    "currency" : "USD",
+                    "amount" : "70.00",
+                    "id" : "38"
+                },
+                "entityName" : "IBM Blue CA",
+                "groupStatusTypeCode" : "101",
+                "billingFrequency" : "monthly",
+                "payrollDeduction" : "Yes",
+                "feeAmounts" : [ 
+                    {
+                        "feeTypeCode" : "101",
+                        "feeAmount" : {
+                            "currency" : "USD",
+                            "amount" : "0.00",
+                            "id" : "39"
+                        }
+                    }
+                ],
+                "lastBillAmount" : {
+                    "currency" : "USD",
+                    "amount" : "200.00",
+                    "id" : "40"
+                },
+                "suspenseAmount" : {
+                    "currency" : "USD",
+                    "amount" : "10.00",
+                    "id" : "41"
+                },
+                "creditsWriteOffsAmount" : {
+                    "currency" : "USD",
+                    "amount" : "15.00",
+                    "id" : "42"
+                },
+                "paymentReceivedAmount" : {
+                    "amount" : "100.00",
+                    "currency" : "USD"
+                }
+            },
+            "self" : "http://localhost:3000/spi/v2/billProfiles/345678912345"
+        }
+    ],
+    "status_groupInfo" : "COMPLETED",
+    "createdAt" : ISODate("2017-12-15T04:36:36.609Z"),
+    "updatedAt" : ISODate("2017-12-15T04:36:59.950Z"),
+    "view_GROUP_DETAILS" : {
+        "dueAmount" : "355.00",
+        "billAmount" : "300.00",
+        "groupNumber" : "777 000 999",
+        "entityName" : "IBM Blue",
+        "feesAmount" : "85.00",
+        "lastpayment" : "200.00",
+        "outstandingAmount" : "70.00",
+        "paymentReceived" : "100.00",
+        "billFromDate" : "2012/10/10",
+        "billToDate" : "2012/11/10",
+        "suspenseAmount" : "10.00",
+        "otherAdjustmentsAmount" : "85.00",
+        "billNumber" : "345678912345"
+    },
+    "view_groupInfo" : {
+        "configurationId" : "DEFAULT_BILLING_TYPE_BILL_PROFILE_GROUP_CORE",
+        "detailedClientData" : {
+            "items" : [ 
+                {
+                    "detailedClientRowData" : [ 
+                        {
+                            "testId" : "groupStatus",
+                            "text" : "On Hold"
+                        }, 
+                        {
+                            "testId" : "dueDate",
+                            "text" : "09/10/2017"
+                        }, 
+                        {
+                            "testId" : "status",
+                            "text" : "Processing"
+                        }, 
+                        {
+                            "testId" : "payrollDeduction",
+                            "text" : "Yes"
+                        }, 
+                        {
+                            "testId" : "deliveryMethod",
+                            "text" : "Email"
+                        }, 
+                        {
+                            "testId" : "entityName",
+                            "text" : "IBM Blue CA"
+                        }, 
+                        {
+                            "testId" : "billAmount",
+                            "text" : "200.00"
+                        }, 
+                        {
+                            "testId" : "groupNumber",
+                            "text" : "23456"
+                        }, 
+                        {
+                            "testId" : "billingFrequency",
+                            "text" : "Monthly"
+                        }, 
+                        {
+                            "testId" : "percentage",
+                            "text" : "22"
+                        }, 
+                        {
+                            "testId" : "dueAmount",
+                            "text" : "270.00"
+                        }
+                    ]
+                }, 
+                {
+                    "detailedClientRowData" : [ 
+                        {
+                            "testId" : "groupStatus",
+                            "text" : "Inactive"
+                        }, 
+                        {
+                            "testId" : "dueDate",
+                            "text" : "10/10/2017"
+                        }, 
+                        {
+                            "testId" : "status",
+                            "text" : "Payment Due"
+                        }, 
+                        {
+                            "testId" : "payrollDeduction",
+                            "text" : "Yes"
+                        }, 
+                        {
+                            "testId" : "deliveryMethod",
+                            "text" : "Email"
+                        }, 
+                        {
+                            "testId" : "entityName",
+                            "text" : "IBM Blue NY"
+                        }, 
+                        {
+                            "testId" : "billAmount",
+                            "text" : "400.00"
+                        }, 
+                        {
+                            "testId" : "groupNumber",
+                            "text" : "45678"
+                        }, 
+                        {
+                            "testId" : "billingFrequency",
+                            "text" : "Monthly"
+                        }, 
+                        {
+                            "testId" : "percentage",
+                            "text" : "44"
+                        }, 
+                        {
+                            "testId" : "dueAmount",
+                            "text" : "360.00"
+                        }
+                    ]
+                }, 
+                {
+                    "detailedClientRowData" : [ 
+                        {
+                            "testId" : "groupStatus",
+                            "text" : "Active"
+                        }, 
+                        {
+                            "testId" : "dueDate",
+                            "text" : "01/5/2018"
+                        }, 
+                        {
+                            "testId" : "status",
+                            "text" : "Paid in full"
+                        }, 
+                        {
+                            "testId" : "payrollDeduction",
+                            "text" : "Yes"
+                        }, 
+                        {
+                            "testId" : "deliveryMethod",
+                            "text" : "Email"
+                        }, 
+                        {
+                            "testId" : "entityName",
+                            "text" : "IBM Blue NC"
+                        }, 
+                        {
+                            "testId" : "billAmount",
+                            "text" : "300.00"
+                        }, 
+                        {
+                            "testId" : "groupNumber",
+                            "text" : "12345"
+                        }, 
+                        {
+                            "testId" : "billingFrequency",
+                            "text" : "Monthly"
+                        }, 
+                        {
+                            "testId" : "percentage",
+                            "text" : "33"
+                        }, 
+                        {
+                            "testId" : "dueAmount",
+                            "text" : "170.00"
+                        }
+                    ]
+                }
+            ]
+        },
+        "groupDetails" : [ 
+            {
+                "testId" : "dueAmount",
+                "text" : "800.00"
+            }, 
+            {
+                "testId" : "billAmount",
+                "text" : "900.00"
+            }, 
+            {
+                "testId" : "groupNumber",
+                "text" : "777 000 999"
+            }, 
+            {
+                "testId" : "entityName",
+                "text" : "IBM Blue"
+            }, 
+            {
+                "testId" : "feesAmount",
+                "text" : "00.00"
+            }, 
+            {
+                "testId" : "lastBillAmount",
+                "text" : "600.00"
+            }, 
+            {
+                "testId" : "outstandingAmount",
+                "text" : "200.00"
+            }, 
+            {
+                "testId" : "paymentReceivedAmount",
+                "text" : "300.00"
+            }, 
+            {
+                "testId" : "billFromDate",
+                "text" : "2012/11/10"
+            }, 
+            {
+                "testId" : "billToDate",
+                "text" : "2012/12/10"
+            }
+        ],
+        "type" : "PROD_TYPE_BILL_PROFILE_GROUP"
+    }
+}

@@ -1,0 +1,27 @@
+{
+		"groupNumber": "12700021",
+		"name": {
+			"firstName": "Mayank",
+			"lastName": "Rawat"
+		},
+		"email": {
+			"typeCode": "",
+			"isPrimary": "TRUE"
+		},
+		"phone": {
+			"countryCode": "U.S",
+			"typeCode": "",
+			"useCode": "",
+			"isPrimary": "true"
+		},
+		"address": {
+			"number": "",
+			"typeCode": "",
+			"addressLine1": "12 main Road",
+			"city": "GA",
+			"postalCode": "30003",
+			"stateCode": "GA",
+			"countryCode": "USA"
+		},
+		"extension": {}
+}

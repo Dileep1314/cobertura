@@ -1,0 +1,268 @@
+{
+  "items": [ 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : ""
+                    }, 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : ""
+                    }, 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : ""
+                    }, 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : ""
+                    }, 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "138.60"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : 0
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : 0
+                    }, 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : ""
+                    }, 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : ""
+                    }, 
+                    {
+                        "adjustmentDate" : null,
+                        "product" : {
+                            "number" : "",
+                            "typeCode" : "700",
+                            "nameCode" : "704",
+                            "name" : "Vision",
+                            "nameCategoryCode" : "704"
+                        },
+                        "employerPremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "employeePremiumAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "adjustmentAmounts" : [ 
+                            {
+                                "employerAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                },
+                                "employeeAdjustmentAmount" : {
+                                    "currencyCode" : "USD",
+                                    "amount" : "0.00"
+                                }
+                            }
+                        ],
+                        "adjustmentReasonCode" : "",
+                        "tierCode" : "100",
+                        "volume" : ""
+                    }
+                ]
+}

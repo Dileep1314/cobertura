@@ -1,0 +1,243 @@
+{
+	"tenantId": "US",
+	"tenantCountry": "US",
+	"patterns": {
+		"editBillingContact": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/billContact",
+		"getBillProfile": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/bills",
+		"editPreference": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/billPreference",
+		"editPreferenceEmployee":"/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/employees/(?<id>[A-Za-z0-9_]+)/billingPreference",
+		"getDashboard": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/commands/groups/(?<groupNumber>[A-Za-z0-9_]+)/dashboard",
+		"employeeGetDashboard": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/commands/groups/employees/(?<id>[A-Za-z0-9_]+)/dashboard",
+		"getListBilldetails": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/views/billProfiles/(?<groupNumber>[A-Za-z0-9_]+)/listBill",
+		"getPaymentdetailsByYear": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/payments",
+		"getUserType": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/employees/getUserType",
+		"downloadPremiumExcel": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/employees/(?<id>[A-Za-z0-9_]+)/downloadPremiumCsv",
+		"downloadListBill": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupId>[A-Za-z0-9_]+)/listBill/downloadDocument",
+		"downloadBillingHistory": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/billHistory/downloadDocument",
+		"selfAdminBill":"/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupId>[A-Za-z0-9_]+)/billProfiles",
+		"downloadSelfAdmin": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/selfAdminBill/downloadDocument",
+		"downloadEConsent": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/consent/downloadDocument",
+		"downloadSelfAdminVoidedActual": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/selfAdminBillVoided/downloadDocument",
+		"getSelfAdminVersions": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/(?<groupNumber>[A-Za-z0-9_]+)/billProfiles/versions",
+		"getAllGroupNumbers" : "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/brokers/(?<brokerId>[A-Za-z0-9_]+)/getAllGroupNumbers",
+		"recipientType": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/views/groups/(?<groupNumber>[A-Za-z0-9_]+)/userType",
+		"downloadDirectBill": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/employees/(?<id>[A-Za-z0-9_]+)/directBill/downloadDocument",
+		"getSelfAdminDetails": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/employees/(?<id>[A-Za-z0-9_]+)/getSelfAdminDetails",
+		"getEmployeeBillHistory": "/v1/tenants/(?<tenantId>[A-Za-z0-9_]+)/groups/employees/(?<id>[A-Za-z0-9_]+)/billHistory/downloadDocument"
+	},
+	
+	"methodDefinitions": {
+	"getSelfAdminDetails": {
+			"GET": [
+				"groovy.US.GET_SELF_ADMIN_BILL_PROFILE"
+			]
+		},
+		"downloadEConsent": {
+			"POST": [
+				"groovy.US.DOWNLOAD_ELECTRONIC_CONSENT"
+			]
+		},
+		"getEmployeeBillHistory": {
+			"POST": [
+				"groovy.US.DOWNLOAD_BILLING_HISTORY"
+			]
+		},
+		"selfAdminBill":{
+			"PUT":["groovy.US.POST_BILLING_DRAFTED_DATA"],"POST":["groovy.US.POST_BILLING_ACTUAL_DATA"],"GET": ["groovy.US.GET_BILLING_DETAILS_BY_YEAR"]
+		},
+		"downloadSelfAdminVoidedActual": {
+			"POST": [
+				"groovy.US.DOWNLOAD_SELF_ADMIN_VOIDED_ACTUALS"
+			]
+		},
+		"downloadSelfAdmin": {
+			"POST": [
+				"groovy.US.DOWNLOAD_SELF_ADMIN"
+			]
+		},
+		"editBillingContact": {
+			"POST": [
+				"groovy.US.EDIT_BILLING_CONTACT"
+			],
+			"GET": [
+				"groovy.US.GET_BILLING_CONTACT"
+			]
+		},
+		"getBillProfile": {
+			"GET": [
+				"groovy.US.GET_BILL_PROFILE"
+			]
+		},
+		"editPreference": {
+			"PUT": [
+				"groovy.US.EDIT_BILLING_PREFERENCE"
+			],
+			"GET": [
+				"groovy.US.GET_BILLING_PREFERENCE"
+			]
+		},
+		"editPreferenceEmployee": {
+			"PUT": [
+				"groovy.US.EDIT_BILLING_PREFERENCE"
+			],
+			"GET": [
+				"groovy.US.GET_BILLING_PREFERENCE"
+			]
+		},
+		
+		"getDashboard": {
+			"GET": [
+				"groovy.US.GET_DASHBOARD_DETAILS"
+			]
+		},
+		"employeeGetDashboard": {
+			"GET": [
+				"groovy.US.GET_EMPLOYEE_DASHBOARD_DETAILS"
+			]
+		},
+		"getListBilldetails": {
+			"GET": [
+				"groovy.US.GET_LIST_BILL_DETAILS"
+			]
+		},
+		"getPaymentdetailsByYear": {
+			"GET": [
+				"groovy.US.GET_PAYMENT_DETAILS_BY_YEAR"
+			]
+		},
+		"getUserType": {
+			"POST": {
+				"tasks": {
+					"STEP2": {
+						"name": "groovy.US.GET_EMPLOYEE_DASHBOARD_DETAILS"
+					}
+				}
+			}
+		},
+		"downloadPremiumExcel": {
+			"GET": [
+				"groovy.US.DOWNLOAD_BILL_DETAILS"
+			]
+		},
+		"downloadListBill": {
+			"POST": [
+				"groovy.US.DOWNLOAD_LIST_BILL_DETAILS"
+			]
+		},
+		"downloadBillingHistory": {
+			"POST": [
+				"groovy.US.DOWNLOAD_BILLING_HISTORY"
+			]
+		},
+		"getSelfAdminVersions": {
+			"GET": [
+				"groovy.US.GET_SELF_ADMIN_VERSIONS"
+			]
+		},
+		"getAllGroupNumbers": {
+			"GET": [
+    			"groovy.US.GET_GROUPS_OF_BROKER"
+   			]
+		},
+		"recipientType": {
+			"POST": [
+				"groovy.US.GET_USER_TYPE"
+			]
+		},
+		"downloadDirectBill": {
+			"POST": [
+				"groovy.US.DOWNLOAD_LIST_BILL_DETAILS"
+			]
+		}
+	},
+	"errorCodes": {
+		"20001": {
+			"statusCode": "200",
+			"message": "Sub Group information is unavailable"
+		},
+		"20002": {
+			"statusCode": "200",
+			"message": "Billing Schedule details is unavailable"
+		},
+		"20003": {
+			"statusCode": "200",
+			"message": "Deduction Schedule details is unavailable"
+		},
+		"20004": {
+			"statusCode": "200",
+			"message": "Failed to update data to MongoDB"
+		},
+		"20005": {
+			"statusCode": "200",
+			"message": "Unable to get billing contact details"
+		},
+		"20006": {
+			"statusCode": "200",
+			"message": "Unable to get billing preference details"
+		},
+		"20007": {
+			"statusCode": "400",
+			"message": "Payment History details is unavailable"
+		},
+		"20008": {
+			"statusCode": "200",
+			"message": "Unable to update billing contact"
+		},
+		"20009": {
+			"statusCode": "200",
+			"message": "Unable to update billing preference"
+		},
+		"20010": {
+			"statusCode": "200",
+			"message": "Bill Summary Details are not available"
+		},
+		"20011": {
+			"statusCode": "200",
+			"message": "Unable to fetch Premium Details & Bill Profile from Database"
+		},
+		"20012": {
+			"statusCode": "200",
+			"message": "Unable to get the data from SPI"
+		},
+		"20013": {
+			"statusCode": "200",
+			"message": "Unable to post the data to SPI"
+		},
+		"20014": {
+			"statusCode": "200",
+			"message": "Unable to get bill profile"
+		},
+		"20015": {
+			"statusCode": "200",
+			"message": "document Id is empty"
+		},
+		"20016": {
+			"statusCode": "200",
+			"message": "one/all of the required request body fields to the service are missing"
+		},
+		"20017": {
+			"statusCode": "200",
+			"message": "bill number not found for the given billing period "
+		},
+		"20018": {
+			"statusCode": "200",
+			"message": "No actuals are present for the given bill number"
+		},
+		"20019": {
+			"statusCode": "200",
+			"message": "Unable to retrieve self admin actuals from SPI"
+		},
+		"UNAUTHORIZED": {
+				"statusCode": "401",
+				"message": "User unauthorized"
+		},
+		"INVALID_FILE": {
+			"statusCode": "500",
+			"message": "Virus found in the uploaded file, Please fix the file"
+		},
+		"ANTI_VIRUS_ERROR" : {
+			"statusCode": "500",
+			"message": "Antivirus scan app is not available.please check app log for more Information"
+		}
+	}
+}

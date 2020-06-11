@@ -1,0 +1,139 @@
+#Local-only config
+
+componentScan:
+  basePackages:
+    com.metlife.gssp.resources,
+    com.metlife.config,
+    com.metlife.gssp.persistence,
+    com.metlife.gssp.repo,
+    com.metlife.service,
+    com.metlife.gssp.common.controller,
+    com.metlife.gssp.common.utils,
+    com.metlife.gssp.configuration,
+    com.metlife.gssp.sample
+    com.metlife.gssp.common.excel.impl
+    com.metlife.gssp.utils
+    
+source: FILE
+groovyPath: src/dynamic/workflow/groovy
+jsonPath: src/dynamic/config/json
+domainModelConfigPath: src/dynamic/domainModel
+templateExcelPath: src/template/excel/
+templateNewExcelPath: src/template/excel/
+imagePath: src/template/images/
+chartName: src/template/images/metlife.JPG
+
+securityCheck: true
+
+template:
+   prodType: PROD_TYPE_BILLING
+   billProfileTemplateName: BILL_PROFILE
+   billProfileSubGroupTemplateName: BILL_PROFILE_SUBGROUP
+   billProfileListBillTemplateName: BILL_PROFILE_LIST_BILL
+
+#desired service registrations for local development
+billProfileService:
+  templateConfigServiceVip: metlife-gssp-template-configuration-service
+  viewUpdaterServiceVip: metlife-gssp-view-updater-service
+  viewServiceVip: metlife-smd-gssp-bills-view-service
+      
+
+useEurekaForEIP: false
+eip:
+  eureka:
+    vipAddress: metlife-smd-gssp-bills-service
+  non-eureka:
+    ribbonClientName: eipservice
+
+eipservice:
+  ribbon:
+    IsSecure: false
+    listOfServers: 10.214.240.34:1001
+    ReadTimeout: 20000
+    ConnectTimeout: 10000
+    MaxAutoRetries: 2
+
+spiservice:
+  ribbon:
+    IsSecure: false
+    
+#SPI properties
+spi:
+  ribbonClient: eipservice 
+  #prefix: /v1
+  prefix: /spi/v2/
+
+#redis cache server
+application:
+  cache:
+    host: localhost
+    port: 6379
+    ttl: 1800
+
+
+#mongo db properties for db connectivity
+mongodatabase:
+  commonLookUpDb: gssp_mongodb
+  userName: #smdadmin01
+  password: #smdadmin01
+  listOfServers: localhost:27017
+  #listOfServers: 172.26.60.105:27017
+  #listOfServers: 172.26.60.69:27017
+  #listOfServers: 172.26.60.61:27017
+  authSource: admin
+  replicaSetName:
+
+spring:
+  application:
+    name: metlife-smd-gssp-bills-service
+  cloud:
+    config:
+      enabled: false
+      discovery:
+        enabled: false
+      fail-fast: false
+
+server:
+  port: 3252
+
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+     # defaultZone:  http://172.26.60.5:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+
+#rabbit mq properties for amqp connectivity
+rabbitmq:
+  addresses:
+    172.26.60.5
+  port:
+    5672
+  username:
+    guest
+  password:
+    guest
+  audit:
+    logger:
+      message:
+        queue:
+          name:
+            myAnonymousQueue
+        exchange:
+          name:
+            TUTORIAL-EXCHANGE
+      microservice:
+        sender:
+          routing:
+            key:
+              my.routingkey.1
+        listener:
+          pattern:
+            my.routingkey.1
+
+ribbon:
+  maxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  ConnectTimeout: 200000
+  ReadTimeout: 300000

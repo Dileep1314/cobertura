@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "paymentMethodCode": "ACH",
+      "account": {
+        "bankAccountID": "12345",
+        "bankAccountNickName": "vicky",
+        "EFTRoutingNumber": "123456789",
+        "accountNumber": "123456789123",
+        "routingNumber": "2345",
+        "accountTypeCode": "S",
+        "accountCategoryCode": "B",
+        "creditCardNumber": "",
+        "creditCardExpirationDate": "",
+        "name": {
+          "personGiven1Name": "Vikas",
+          "personLastName": "raj",
+          "personFullName": "Vikasraj"
+        },
+        "addresses": [
+          {
+            "addressTypeCode": "string",
+            "addressTypeDescription": "string",
+            "address1Line": "Wallmart street road",
+            "address2Line": "",
+            "address3Line": "",
+            "countryName": "USA",
+            "cityName": "Newyork",
+            "addressFormatCode": "USA",
+            "extension": {
+              "zipDeliveryOfficeCode": "12345",
+              "zipDeliverySegmentCode": "12345",
+              "stateCode": "US",
+              "forwardSortationAreaCode": "US",
+              "localDeliveryUnitCode": "US",
+              "provinceCode": "Canada",
+              "internationalStateName": "Non-Canadian",
+              "internationalPostalCode": "NA",
+              "countyName": "USA"
+            }
+          }
+        ]
+      }
+    },
+	{
+      "paymentMethodCode": "CC",
+      "account": {
+        "bankAccountID": "54321",
+        "bankAccountNickName": "vikas",
+        "EFTRoutingNumber": "987654321",
+        "accountNumber": "321987654321",
+        "routingNumber": "5432",
+        "accountTypeCode": "S",
+        "accountCategoryCode": "C",
+        "creditCardNumber": "1234567891234567",
+        "creditCardExpirationDate": "06/21",
+        "name": {
+          "personGiven1Name": "Vikas",
+          "personLastName": "raj",
+          "personFullName": "Vikasraj"
+        },
+        "addresses": [
+          {
+            "addressTypeCode": "",
+            "addressTypeDescription": "string",
+            "address1Line": "Wallmart street road",
+            "address2Line": "",
+            "address3Line": "",
+            "countryName": "USA",
+            "cityName": "Newyork",
+            "addressFormatCode": "USA",
+            "extension": {
+              "zipDeliveryOfficeCode": "12345",
+              "zipDeliverySegmentCode": "12345",
+              "stateCode": "US",
+              "forwardSortationAreaCode": "US",
+              "localDeliveryUnitCode": "US",
+              "provinceCode": "Canada",
+              "internationalStateName": "Non-Canadian",
+              "internationalPostalCode": "NA",
+              "countyName": "USA"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

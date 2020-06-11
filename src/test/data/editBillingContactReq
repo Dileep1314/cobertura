@@ -1,0 +1,31 @@
+		{
+			"groupNumber": "12345",
+			"name": {
+				"suffix": "MR",
+				"firstName": "Peter",
+				"middleName": "john",
+				"lastName": "Pernn"
+			},
+			"email": {
+				"address": "test@metlife.com",
+				"typeCode": "PERSONAL",
+				"isPrimary": false
+			},
+			"phone": {
+				"countryCode": "+1",
+				"number": "2018856788",
+				"isPrimary": true
+			},
+			"address": {
+				"number": "235346",
+				"typeCode": "HOME",
+				"addressLine1": "101 Metlife",
+				"addressLine2": "Metlife way",
+				"city": "Cary",
+				"postalCode": "27560",
+				"stateCode": "NC",
+				"countryCode": "USA"
+			},
+			"extension": {
+			}
+		}

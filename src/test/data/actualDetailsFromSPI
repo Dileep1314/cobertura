@@ -1,0 +1,172 @@
+{
+    "selfAdminVoidedActual": {
+        "number": "123456789-123450",
+        "billAmount": {
+            "amount": "200.00",
+            "currency": "USD"
+        },
+        "extension": {
+            "billMethodCode": null,
+            "lastBillAmount": {
+                "amount": "220.00",
+                "currency": "USD"
+            },
+            "billToDate": "2012-12-10",
+            "billFromDate": "2012-11-10",
+            "outstandingAmount": {
+                "amount": "200.00",
+                "currency": "USD"
+            },
+            "feeAmounts": [
+                {
+                    "feeAmount": {
+                        "amount": "10.06",
+                        "currency": "USD"
+                    },
+                    "code": "302"
+                }
+            ],
+            "totalActualPremium": {
+                "amount": "900",
+                "currency": "USD"
+            },
+            "billStatusTypeCode": "NOT PAID",
+            "submissionStatusTypeCode": "OPEN",
+            "submissionDate": "12/25/2018",
+            "productDetails": [
+                {
+                    "product": {
+                        "number": "101",
+                        "nameCode": "101",
+                        "nameCategoryCode": [],
+                        "typeCode": "100"
+                    },
+                    "productPremium": {
+                        "amount": "",
+                        "currencyCode": "USD"
+                    },
+                    "totalActualPremium": "350",
+                    "statusTypeCode": "In Progress",
+                    "receivable": [
+                        {
+                            "toAge": "50",
+                            "estimatedPremium": {
+                                "amount": "300.00",
+                                "currencyCode": "USD"
+                            },
+                            "estimatedLives": "100",
+                            "rate": "0.09",
+                            "fromAge": "25",
+                            "tierCode": "SPOUSE ONLY",
+                            "actualVolume": "5",
+                            "actualLives": "3",
+                            "estimatedVolume": "500",
+                            "actualPremium": {
+                                "amount": "",
+                                "currencyCode": "USD"
+                            },
+                            "class": {
+                                "number": "A123",
+                                "name": "Executive"
+                            }
+                        },
+                        {
+                            "toAge": "50",
+                            "estimatedPremium": {
+                                "amount": "300.00",
+                                "currencyCode": "USD"
+                            },
+                            "estimatedLives": "100",
+                            "rate": "0.09",
+                            "fromAge": "35",
+                            "tierCode": "SPOUSE ONLY",
+                            "actualVolume": "",
+                            "actualLives": "",
+                            "estimatedVolume": "500",
+                            "actualPremium": {
+                                "amount": "20.25",
+                                "currencyCode": "USD"
+                            },
+                            "class": {
+                                "number": "A123",
+                                "name": "Executive"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "product": {
+                        "number": "101",
+                        "nameCode": "102",
+                        "nameCategoryCode": [],
+                        "typeCode": "100"
+                    },
+                    "productPremium": {
+                        "amount": "150.00",
+                        "currencyCode": "USD"
+                    },
+                    "totalActualPremium": "350",
+                    "statusTypeCode": "In Progress",
+                    "receivable": [
+                        {
+                            "toAge": "50",
+                            "estimatedPremium": {
+                                "amount": "200.00",
+                                "currencyCode": "USD"
+                            },
+                            "estimatedLives": "100",
+                            "rate": "0.09",
+                            "fromAge": "35",
+                            "tierCode": "SPOUSE ONLY",
+                            "actualVolume": "100",
+                            "actualLives": "",
+                            "estimatedVolume": "500",
+                            "actualPremium": {
+                                "amount": "0",
+                                "currencyCode": "USD"
+                            },
+                            "class": {
+                                "number": "A123",
+                                "name": "Executive"
+                            }
+                        },
+                        {
+                            "toAge": "50",
+                            "estimatedPremium": {
+                                "amount": "300.00",
+                                "currencyCode": "USD"
+                            },
+                            "estimatedLives": "100",
+                            "rate": "0.09",
+                            "fromAge": "35",
+                            "tierCode": "SPOUSE ONLY",
+                            "actualVolume": "",
+                            "actualLives": "",
+                            "estimatedVolume": "500",
+                            "actualPremium": {
+                                "amount": "0",
+                                "currencyCode": "USD"
+                            },
+                            "class": {
+                                "number": "A123",
+                                "name": "Executive"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "suspenseAmount": {
+                "amount": "10.00",
+                "currency": "USD"
+            }
+        },
+        "dueAmount": {
+            "amount": "200.00",
+            "currency": "USD"
+        },
+        "dueDate": "2012-12-12",
+        "billMode": "EMAIL",
+        "billDate": "2012-11-12",
+        "accountNumber": "12345"
+    }
+}

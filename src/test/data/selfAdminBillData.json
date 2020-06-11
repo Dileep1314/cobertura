@@ -1,0 +1,160 @@
+{
+		"number" : "123456789-12345",
+       "accountNumber" : "12345",
+		"billDate": "2012-11-12",
+		"billMode": "EMAIL",
+		"billAmount": {
+			"amount": "200.00",
+			"currency": "USD"
+		},
+		"dueAmount": {
+			"amount": "200.00",
+			"currency": "USD"
+		},
+		"dueDate": "2012-12-12",
+		"extension": {
+			"billFromDate": "2012-11-10",
+			"billToDate": "2012-12-10",
+			"billStatusTypeCode": "NOT PAID",
+			"billMethodCode": "SELF ADMIN",
+			"outstandingAmount": {
+				"amount": "200.00",
+				"currency": "USD"
+			},
+			"feeAmounts": [{
+				"code": "302",
+				"feeAmount": {
+					"amount": "0.00",
+					"currency": "USD"
+				}
+			}],
+			"productDetails": [{
+				"product": {
+					"number": "101",
+					"typeCode": "100",
+					"nameCode": "Dental",
+					"nameCategoryCode": []
+				},
+				"statusTypeCode": "In Progress",
+				"totalActualPremium": "",
+				"productPremium": {
+					"currencyCode": "USD",
+					"amount": ""
+				},
+				"receivable": [{
+					"estimatedPremium": {
+						"currencyCode": "USD",
+						"amount": "300.00"
+					},
+					"actualPremium": {
+						"currencyCode": "USD",
+						"amount": "10.25"
+					},
+					"tierCode": "MEMBER + SPOUSE",
+					"class": {
+						"number": "A123",
+						"name": "Executive"
+					},
+					"fromAge": "25",
+					"toAge": "50",
+					"estimatedLives": "100",
+					"actualLives": "3",
+					"estimatedVolume": "500",
+					"actualVolume": "5",
+					"rate": "0.09"
+				},
+				{
+					"estimatedPremium": {
+						"currencyCode": "USD",
+						"amount": "300.00"
+					},
+					"actualPremium": {
+						"currencyCode": "USD",
+						"amount": "20.25"
+					},
+					"tierCode": "MEMBER + FAMILY",
+					"class": {
+						"number": "A123",
+						"name": "Executive"
+					},
+					"fromAge": "35",
+					"toAge": "50",
+					"estimatedLives": "100",
+					"actualLives": "",
+					"estimatedVolume": "500",
+					"actualVolume": "",
+					"rate": "0.09"
+				}]
+			},
+			{
+				"product": {
+					"number": "101",
+					"typeCode": "100",
+					"nameCode": "Product name",
+					"nameCategoryCode": []
+				},
+				"statusTypeCode": "In Progress",
+				"totalActualPremium": "",
+				"productPremium": {
+					"currencyCode": "USD",
+					"amount": "150.00"
+				},
+				"receivable": [{
+					"estimatedPremium": {
+						"currencyCode": "USD",
+						"amount": "200.00"
+					},
+					"actualPremium": {
+						"currencyCode": "USD",
+						"amount": "0"
+					},
+					"tierCode": "SPOUSE ONLY",
+					"class": {
+						"number": "A123",
+						"name": "Executive"
+					},
+					"fromAge": "35",
+					"toAge": "50",
+					"estimatedLives": "100",
+					"actualLives": "",
+					"estimatedVolume": "500",
+					"actualVolume": "100",
+					"rate": "0.09"
+				},
+				{
+					"estimatedPremium": {
+						"currencyCode": "USD",
+						"amount": "300.00"
+					},
+					"actualPremium": {
+						"currencyCode": "USD",
+						"amount": "0"
+					},
+					"tierCode": "MEMBER ONLY",
+					"class": {
+						"number": "A123",
+						"name": "Executive"
+					},
+					"fromAge": "35",
+					"toAge": "50",
+					"estimatedLives": "100",
+					"actualLives": "",
+					"estimatedVolume": "500",
+					"actualVolume": "",
+					"rate": "0.09"
+				}]
+			}],
+			"lastBillAmount": {
+				"amount": "220.00",
+				"currency": "USD"
+			},
+			"suspenseAmount": {
+				"amount": "10.00",
+				"currency": "USD"
+			},
+			"version": "current",
+			"submissionStatusTypeCode": "OPEN",
+			"submissionDate": "12/25/2018",
+			"voided": "true"
+		}
+}

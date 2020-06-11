@@ -1,0 +1,13 @@
+{
+		"item": {
+			"groupNumber": "12345",
+			"deliveryMethod": "Email",
+			"format": "PDF",
+			"billingFrequency": "Monthly",
+			"billBasis": "Due In Advance",
+			"dueDay": "8",
+			"sendDay": "3",
+			"leadDays": "5",
+			"extension": {}
+		}
+	}

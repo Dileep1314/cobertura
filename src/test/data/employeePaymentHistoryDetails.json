@@ -1,0 +1,205 @@
+{
+  "items": [
+    {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 878.14
+            },
+            "paidDate" : "05/28/2018",
+            "methodCode" : "104",
+            "statusCode" : "400",
+            "typeCode" : "PREMIUM",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 702.12
+            },
+            "paidDate" : "05/28/2018",
+            "methodCode" : "103",
+            "statusCode" : "400",
+            "typeCode" : "PREMIUM",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 770.12
+            },
+            "paidDate" : "05/28/2018",
+            "methodCode" : "104",
+            "statusCode" : "400",
+            "typeCode" : "SUSPENSE",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 1120.85
+            },
+            "paidDate" : "05/28/2018",
+            "methodCode" : "104",
+            "statusCode" : "400",
+            "typeCode" : "SUSPENSE",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "reasonCode" : "300",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 2000
+            },
+            "paidDate" : "03/15/2018",
+            "methodCode" : "104",
+            "statusCode" : "401",
+            "typeCode" : "PREMIUM",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "reasonCode" : "300",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : "738.40"
+            },
+            "paidDate" : "03/15/2018",
+            "methodCode" : "104",
+            "statusCode" : "401",
+            "typeCode" : "PREMIUM",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "reasonCode" : "302",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 697
+            },
+            "paidDate" : "03/13/2018",
+            "methodCode" : "104",
+            "statusCode" : "401",
+            "typeCode" : "PREMIUM",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "reasonCode" : "302",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 180
+            },
+            "paidDate" : "03/13/2018",
+            "methodCode" : "103",
+            "statusCode" : "401",
+            "typeCode" : "PREMIUM",
+            "referenceNumber" : "1"
+        }, 
+        {
+            "number" : "12700021",
+            "self" : "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+            "accountNumber" : "",
+            "paymentAccountNumber" : "",
+            "extension" : "",
+            "product" : {
+                "number" : "",
+                "typeCode" : "",
+                "nameCode" : ""
+            },
+            "paidAmount" : {
+                "currencyCode" : "USD",
+                "amount" : 100
+            },
+            "paidDate" : "03/13/2018",
+            "methodCode" : "104",
+            "statusCode" : "400",
+            "typeCode" : "PREMIUM",
+            "referenceNumber" : "1"
+        }
+  ],
+  "links": [
+    {}
+  ],
+  "metadata": {
+    "count": 0,
+    "limit": 0,
+    "offset": 0
+  }
+}

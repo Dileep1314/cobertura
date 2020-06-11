@@ -1,0 +1,75 @@
+{
+  "items": [
+    {
+      "item": {
+        "number": "123456789-12345",
+        "self": "http://apiology.metlife.com/api/accounts/A1234/billProfiles",
+        "accountNumber": "12700021",
+        "billDate": "2012-11-12",
+        "billMode": "301",
+        "billAmount": {
+          "amount": "200.00",
+          "currency": "USD"
+        },
+        "dueAmount": {
+          "amount": "200.00",
+          "currency": "USD"
+        },
+        "dueDate": "2012-12-12",
+        "extension" : {
+                        "billFromDate" : "10/01/2018",
+                        "billToDate" : "10/31/2018",
+                        "billStatusTypeCode" : "101",
+                        "outstandingAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "1340.22"
+                        },
+                        "paymentReceivedAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "billMethodCode" : "400",
+                        "feeAmounts" : [ 
+                            {
+                                "feeTypeCode" : "201",
+                                "feeAmount" : {
+                                    "amount" : 15,
+                                    "currencyCode" : "USD"
+                                }
+                            }
+                        ],
+                        "lastBillAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "suspenseAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "otherAdjustmentsAmount" : {
+                            "currencyCode" : "USD",
+                            "amount" : "0.00"
+                        },
+                        "entityName" : "MRBEAN",
+                        "documentMetaData" : [ 
+                            {
+                                "recipientTypeCode" : "502"
+                            }
+                        ]
+                    }
+      },
+      "links": [
+        {}
+      ],
+      "metadata": { }
+    }
+  ],
+  "links": [
+    {}
+  ],
+  "metadata": {
+    "count": 100,
+    "limit": 10,
+    "offset": 10
+  }
+}

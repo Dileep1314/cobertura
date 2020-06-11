@@ -1,0 +1,46 @@
+{
+	"items": [{
+			"item": {
+				"version": "1",
+				"billNumber": "12345",
+				"self": "http://spi.metlife.com/api/groups/GR2344554",
+				"billFromDate": "04/01/2018",
+				"billToDate": "04/30/2018",
+				"submissionDate": "04/15/2018",
+				"voidedDate": "04/16/2018",
+				"submissionStatusTypeCode": "502",
+				"extension": {}
+			},
+			"links": [],
+			"metadata": {}
+		}, {
+			"item": {
+				"version": "2",
+				"billNumber": "12345",
+				"self": "http://spi.metlife.com/api/groups/GR2344554",
+				"billFromDate": "04/01/2018",
+				"billToDate": "04/30/2018",
+				"submissionDate": "04/15/2018",
+				"voidedDate": "04/16/2018",
+				"submissionStatusTypeCode": "502",
+				"extension": {}
+			},
+			"links": [],
+			"metadata": {}
+		}, {
+			"item": {
+				"version": "0",
+				"billNumber": "12345",
+				"self": "http://spi.metlife.com/api/groups/GR2344554",
+				"billFromDate": "05/01/2018",
+				"billToDate": "05/30/2018",
+				"submissionDate": "05/15/2018",
+				"voidedDate": "05/16/2018",
+				"submissionStatusTypeCode": "500",
+				"extension": {}
+			},
+			"links": [],
+			"metadata": {}
+		}
+	]
+}

@@ -1,0 +1,199 @@
+{
+	"items": [{
+			"item": {
+				"number": "178789",
+				"self": "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+				"accountNumber": "127000210001",
+				"billDate": "11/21/2018",
+				"billMode": "300",
+				"extension": {
+					"billMethodCode": "400",
+					"billFromDate": "12/01/2018",
+					"billToDate": "12/31/2018",
+					"billStatusTypeCode": "101",
+					"entityName": "IBM thane",
+					"groupStatusTypeCode": "100",
+					"effectiveDate": "03/12/2018",
+					"billingFrequencyTypeCode": "100",
+					"payrollDeductionTypeCode": "300",
+					"outstandingAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"paymentReceivedAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"feeAmounts": [{
+						"feeTypeCode": "201",
+						"feeAmount": {
+							"amount": "15.00",
+							"currencyCode": "USD"
+						}
+					}],
+					"lastBillAmount": {
+						"currencyCode": "USD",
+						"amount": "418.58"
+					},
+					"suspenseAmount": {
+						"currencyCode": "USD",
+						"amount": "82.84"
+					},
+					"otherAdjustmentsAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"documentMetaData": [{
+							"documentId": "GB790876mtOaiXfw15409935WTdTDQfw",
+							"recipientTypeCode": "502"
+						},
+						{
+							"documentId": "GB790876aDLvchAh15409935CyJpUxEZ"
+						}
+					]
+				},
+				"dueDate": "12/01/2018",
+				"billAmount": {
+					"currencyCode": "USD",
+					"amount": "3154.35"
+				},
+				"dueAmount": {
+					"currencyCode": "USD",
+					"amount": "3071.51"
+				}
+			}
+		},
+		{
+			"item": {
+				"number": "178637",
+				"self": "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+				"accountNumber": "1270002110002",
+				"billDate": "10/22/2018",
+				"billMode": "300",
+				"extension": {
+					"billMethodCode": "400",
+					"billFromDate": "11/01/2018",
+					"billToDate": "11/30/2018",
+					"billStatusTypeCode": "101",
+					"entityName": "IBM KURLA",
+					"groupStatusTypeCode": "100",
+					"effectiveDate": "03/12/2018",
+					"billingFrequencyTypeCode": "100",
+					"payrollDeductionTypeCode": "300",
+					"outstandingAmount": {
+						"currencyCode": "USD",
+						"amount": "1525.41"
+					},
+					"paymentReceivedAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"feeAmounts": [{
+						"feeTypeCode": "201",
+						"feeAmount": {
+							"amount": "15.00",
+							"currencyCode": "USD"
+						}
+					}],
+					"lastBillAmount": {
+						"currencyCode": "USD",
+						"amount": "619.44"
+					},
+					"suspenseAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"otherAdjustmentsAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"documentMetaData": [{
+							"documentId": "GBDEV790eTqjMSOy15367588KrkvrmLg",
+							"recipientTypeCode": "502"
+						},
+						{
+							"documentId": "GBDEV790jASQaQTS15367588fBnkzeUI"
+						}
+					]
+				},
+				"dueDate": "11/01/2018",
+				"billAmount": {
+					"currencyCode": "USD",
+					"amount": "921.66"
+				},
+				"dueAmount": {
+					"currencyCode": "USD",
+					"amount": "2447.07"
+				}
+			}
+		},
+		{
+			"item": {
+				"number": "178752",
+				"self": "http://apiology.metlife.com/api/accounts/A1234/billingProfiles",
+				"accountNumber": "12700021",
+				"billDate": "11/14/2018",
+				"billMode": "301",
+				"extension": {
+					"billMethodCode": "400",
+					"billFromDate": "11/01/2018",
+					"billToDate": "11/30/2018",
+					"billStatusTypeCode": "101",
+					"entityName": "MRBEAN",
+					"groupStatusTypeCode": "100",
+					"effectiveDate": "03/12/2018",
+					"billingFrequencyTypeCode": "100",
+					"payrollDeductionTypeCode": "300",
+					"outstandingAmount": {
+						"currencyCode": "USD",
+						"amount": "1878.52"
+					},
+					"paymentReceivedAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"feeAmounts": [{
+							"feeTypeCode": "201",
+							"feeAmount": {
+								"amount": "15.00",
+								"currencyCode": "USD"
+							}
+						},
+						{
+							"feeTypeCode": "202",
+							"feeAmount": {
+								"amount": "111.00",
+								"currencyCode": "USD"
+							}
+						}
+					],
+					"lastBillAmount": {
+						"currencyCode": "USD",
+						"amount": "433.64"
+					},
+					"suspenseAmount": {
+						"currencyCode": "USD",
+						"amount": "-1325.75"
+					},
+					"otherAdjustmentsAmount": {
+						"currencyCode": "USD",
+						"amount": "0.00"
+					},
+					"documentMetaData": [{
+						"documentId": "GB790871JykxjwOm15390031ggvhFNeR",
+						"recipientTypeCode": "502"
+					}]
+				},
+				"dueDate": "11/01/2018",
+				"billAmount": {
+					"currencyCode": "USD",
+					"amount": "544.64"
+				},
+				"dueAmount": {
+					"currencyCode": "USD",
+					"amount": "1698.57"
+				}
+			}
+		}
+	]
+}

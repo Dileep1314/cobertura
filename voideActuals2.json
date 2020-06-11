@@ -1,0 +1,168 @@
+{
+	"number": "123456789-12345",
+	"accountNumber": "12345",
+	"billDate": "11/12/2012",
+	"billMode": "300",
+	"billAmount": {
+		"amount": "200.00",
+		"currency": "USD"
+	},
+	"dueAmount": {
+		"amount": "200.00",
+		"currency": "USD"
+	},
+	"dueDate": "12/12/2012",
+	"extension": {
+		"billFromDate": "11/10/2012",
+		"billToDate": "12/10/2012",
+		"billStatusTypeCode": "101",
+		"billMethodCode": "400",
+		"totalActualPremium": {
+			"amount": "800",
+			"currency": "USD"
+		},
+		"outstandingAmount": {
+			"amount": "300.00",
+			"currency": "USD"
+		},
+		"entityName": "IBM Blue",
+		"feeAmounts": [{
+				"code": "302",
+				"feeAmount": {
+					"amount": "10.06",
+					"currency": "USD"
+				}
+			}
+		],
+		"productDetails": [{
+				"product": {
+					"number": "101",
+					"typeCode": "100",
+					"nameCode": "101",
+					"nameCategoryCode": []
+				},
+				"statusTypeCode": "In Progress",
+				"totalActualPremium": "550",
+				"productPremium": {
+					"currencyCode": "USD",
+					"amount": ""
+				},
+				"receivable": [{
+						"estimatedPremium": {
+							"currencyCode": "USD",
+							"amount": "300.00"
+						},
+						"actualPremium": {
+							"currencyCode": "USD",
+							"amount": ""
+						},
+						"tierCode": "101",
+						"class": {
+							"number": "A123",
+							"name": "Executive"
+						},
+						"fromAge": "25",
+						"toAge": "50",
+						"estimatedLives": "100",
+						"actualLives": "3",
+						"estimatedVolume": "500",
+						"actualVolume": "1000",
+						"rate": "0.09"
+					}, {
+						"estimatedPremium": {
+							"currencyCode": "USD",
+							"amount": "300.00"
+						},
+						"actualPremium": {
+							"currencyCode": "USD",
+							"amount": "20.25"
+						},
+						"tierCode": "102",
+						"class": {
+							"number": "A123",
+							"name": "Executive"
+						},
+						"fromAge": "35",
+						"toAge": "50",
+						"estimatedLives": "100",
+						"actualLives": "5",
+						"estimatedVolume": "500",
+						"actualVolume": "1000",
+						"rate": "0.09"
+					}
+				]
+			}, {
+				"product": {
+					"number": "101",
+					"typeCode": "100",
+					"nameCode": "102",
+					"nameCategoryCode": []
+				},
+				"statusTypeCode": "In Progress",
+				"totalActualPremium": "350",
+				"productPremium": {
+					"currencyCode": "USD",
+					"amount": "150.00"
+				},
+				"receivable": [{
+						"estimatedPremium": {
+							"currencyCode": "USD",
+							"amount": "200.00"
+						},
+						"actualPremium": {
+							"currencyCode": "USD",
+							"amount": "0"
+						},
+						"tierCode": "101",
+						"class": {
+							"number": "A123",
+							"name": "Executive"
+						},
+						"fromAge": "35",
+						"toAge": "50",
+						"estimatedLives": "100",
+						"actualLives": "6",
+						"estimatedVolume": "500",
+						"actualVolume": "1000",
+						"rate": "0.09"
+					}, {
+						"estimatedPremium": {
+							"currencyCode": "USD",
+							"amount": "300.00"
+						},
+						"actualPremium": {
+							"currencyCode": "USD",
+							"amount": "0"
+						},
+						"tierCode": "101",
+						"class": {
+							"number": "A123",
+							"name": "Executive"
+						},
+						"fromAge": "35",
+						"toAge": "50",
+						"estimatedLives": "100",
+						"actualLives": "2",
+						"estimatedVolume": "500",
+						"actualVolume": "1000",
+						"rate": "0.09"
+					}
+				]
+			}
+		],
+		"estimatedBillAmount" : {
+			"amount" : "12500.00",
+			"currency" : "USD"
+		},
+		"lastBillAmount": {
+			"amount": "220.00",
+			"currency": "USD"
+		},
+		"suspenseAmount": {
+			"amount": "10.00",
+			"currency": "USD"
+		},
+		"submissionStatusTypeCode": "502",
+		"submissionDate": "12/25/2018"
+	}
+}

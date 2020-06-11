@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "count": 3,
+    "offset": 0,
+    "limit": 10
+  },
+  "items": [
+    {
+      "item": {
+        "number": "P1234",
+        "accountNumber": "12345",
+        "paymentProduct": {
+          "typeCode": "100",
+          "nameCode": "101"
+        },
+        "methodCode": "201",
+        "paidDate": "01-01-2016",
+        "paidAmount": {
+          "amount": "200.00",
+          "currency": "USD"
+        },
+        "reasonCode": "301",
+        "referenceNumber": "R1234",
+        "statusCode": "401"
+      }
+    },
+    {
+      "item": {
+        "number": "P1234",
+        "accountNumber": "12345",
+        "paymentProduct": {
+          "typeCode": "100",
+          "nameCode": "102"
+        },
+        "methodCode": "202",
+        "paidDate": "02-02-2016",
+        "paidAmount": {
+          "amount": "200.00",
+          "currency": "USD"
+        },
+        "reasonCode": "302",
+        "referenceNumber": "R1234",
+        "statusCode": "402"
+      }
+    }
+  ]
+}

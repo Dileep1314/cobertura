@@ -1,0 +1,13 @@
+apply plugin: "sonar-runner"
+
+sonarRunner {
+  sonarProperties {
+    property "sonar.projectName", "smd_gssp_bills_service"
+    property "sonar.projectKey", "smd-gssp-bills-service"
+    property "sonar.host.url", "http://172.26.60.25:9000"
+    property "sonar.language", "grvy"
+  }
+
+  toolVersion = '2.3'
+}
+

@@ -1,0 +1,60 @@
+{
+    "product": {
+        "typeCode": "100",
+        "nameCode": "101"
+    },
+    "categoryCode": "APPLICATION",
+    "typeCode": "101",
+    "creatorNumber": "4575686789",
+    "creatorTypeCode": "100",
+    "extension": {
+        "accountNumber": "8476459677",
+        "effectiveDate": "2017-03-03",
+        "requestedDate": "2017-03-03",
+         "changeInPremiumAmount": {
+      "currencyCode": "USD",
+                "amount": "100000.00"
+    },
+    "totalPremium": {
+      "paymentFrequencyCode": "string",
+      "premiumAmount": {
+        "currencyCode": "USD",
+                "amount": "100000.00"
+      }
+    },
+        "coverageChangeRequests": [{
+            "number": "123456",
+            "typeCode": "101",
+            "changeTypeCode": "301",
+            "coveredAmount": {
+                "currencyCode": "USD",
+                "amount": "100000.00"
+            },
+            "modalPremium":{
+                "paymentFrequencyCode": "501",
+                "premiumAmount": {
+                    "amount": "79000.23",
+                    "currencyCode": "USD"
+                }
+            },
+            "benefitPercentage": "20"
+        }],
+        "riderChangeRequests": [{
+            "number": "123456",
+            "typeCode": "101",
+            "changeTypeCode": "301",
+            "coveredAmount": {
+                "currencyCode": "USD",
+                "amount": "100000.00"
+            },
+            "modalPremium":{
+                "paymentFrequencyCode": "501",
+                "premiumAmount": {
+                    "amount": "79000.23",
+                    "currencyCode": "USD"
+                }
+            },
+            "benefitPercentage": "20"
+        }]
+    }
+}

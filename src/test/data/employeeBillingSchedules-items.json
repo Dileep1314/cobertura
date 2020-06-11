@@ -1,0 +1,22 @@
+{
+  "items": [{
+    "item": {
+      "groupNumber": "12700021",
+      "billingPeriodStartDate": "11/01/2017",
+      "billingPeriodEndDate": "11/30/2017",
+      "scheduledSendDate": "12/05/2017",
+      "dueDate": "12/15/2017",
+      "actualSendDate" : "",
+
+      "extension": {}
+    },
+    "links": [{}],
+    "metadata": {}
+  }],
+  "links": [{}],
+  "metadata": {
+    "count": 100,
+    "limit": 10,
+    "offset": 10
+  }
+}

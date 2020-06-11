@@ -6,4 +6,8 @@ task helloWorld {
 
 task helloWorldLeftShift << {
 	println 'Hello World Left Shift Operator!'
+
 }
+dependencies {
+                classpath 'net.saliman:gradle-cobertura-plugin:2.2.7'
+            }

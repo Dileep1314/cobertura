@@ -4,7 +4,7 @@ pipeline {
     options { skipDefaultCheckout() }
 	environment { 
         branch = 'master' 
-        credentialsId = 'dd'     // credential of jenkins 
+        credentialsId = 'dileep'     // credential of jenkins 
         scmUrl = 'https://github.com/Dileep1314/cobertura'
     } 
     stages {

@@ -1,81 +1,9 @@
 apply plugin: 'java'
-//apply plugin: 'groovy'
-//apply plugin: 'idea'
-//apply plugin: 'eclipse'
-//apply plugin: 'maven'
-//apply plugin: 'maven-publish'
-//apply plugin: 'spring-boot'
-//apply plugin: "io.spring.dependency-management"
-//apply plugin: 'org.sonarqube'
-//apply from: 'codenarc.gradle'
-//apply from: 'cobertura.gradle'
-
-
-
-//version = version = hasProperty('buildVersion') ? "${buildVersion}" : '0.1.0' //if you feel this needs to change, contact phil phelm@metlife.com
-//group = 'com.metlife.gssp'//if you feel this needs to change, contact phil phelm@metlife.com
-
-//description = "This microservice is used to retrieve the template based upon the template Id and generate the hydrated data "
-
-//springBoot {
-	//mainClass = "com.metlife.gssp.Application"
-	//executable = true
-}
-
-//publishName
-//def publishName = 'smd-gssp-bills-service'
-
-//eclipse.project {
-	//natures 'org.springsource.ide.eclipse.gradle.core.nature'
-}
-
-//****** USE THIS TASK TO RUN THE PROJECT LOCALLY via GRADLE ******
-//task bootRunLocal_templateService <<{
-  bootRun { systemProperty "spring.profiles.active", "local" }
-}
-//bootRunLocal_templateService.finalizedBy bootRun
-
-//configurations.all {
-  //exclude module: 'log4j'
-  //exclude module: 'slf4j-log4j12'
-  //exclude module: 'slf4j-simple'
-  //exclude module: 'logback-core'
-  //exclude module: 'logback-classic'
-	//resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
-}
 
 sourceCompatibility = 1.8 //we are using jdk 1.8
 targetCompatibility = 1.8
-
-
-
-//dependencyManagement {
-	//imports {
-		//mavenBom 'com.metlife.gssp:gssp-framework-bom:0.1.10-SNAPSHOT'
-	}
-}
 
 dependencies {
 	
 	compile 'io.reactivex:rxjava:1.1.9'
 	}
-
-sourceSets {
-	main {
-		//groovy { srcDirs = ['src/dynamic/workflow']}
-	}
-
-	test {
-		//groovy { srcDirs = ['src/test/groovy']}
-		java { srcDirs = ['src/test/java']}
-	}
-}
-
-test {
-	//testLogging {
-		// Show that tests are run in the command-line output
-		//events 'started', 'passed', 'skipped', 'failed'
-	}
-}
-
-
